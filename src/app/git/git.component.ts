@@ -1,15 +1,31 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../user-class/user';
+import { HttpClient } from '@angular/common/http';
+import { ProfileService } from '../services/profile.service';
+//import {Repository} '../repository-class/repository';
 
 @Component({
   selector: 'app-git',
   templateUrl: './git.component.html',
+  providers:[ProfileService],
   styleUrls: ['./git.component.css']
 })
 export class GitComponent implements OnInit {
+ 
+ 
+ public username='dukundejeanne';
+ public  getProfileInfo:string;
+ user:User;
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+
+
+  constructor(public userRequest:ProfileService,public repoRequest:ProfileService) { }
+
+  ngOnInit() {
+    
+  
+   }
+  
 
 }
