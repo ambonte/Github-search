@@ -41,4 +41,3 @@ export class ProfileComponent implements OnInit {
     //this.profileService.getProfileInfo();
    }
 }
-

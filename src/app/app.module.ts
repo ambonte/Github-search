@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitComponent } from './git/git.component';
 import { DatePipe } from './date.pipe';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DatePipe } from './date.pipe';
     AboutComponent,
     ProfileComponent,
     GitComponent,
-    DatePipe
+    DatePipe,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

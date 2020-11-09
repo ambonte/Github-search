@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from '../user-class/user';
+import {User} from '../user';
 import { HttpClient } from '@angular/common/http';
 import { ProfileService } from '../services/profile.service';
 //import {Repository} '../repository-class/repository';
