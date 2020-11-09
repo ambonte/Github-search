@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ProfileComponent } from './profile/profile.component';
 import { GitComponent } from './git/git.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GitComponent } from './git/git.component';
     NavbarComponent,
     AboutComponent,
     ProfileComponent,
-    GitComponent
+    GitComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,
