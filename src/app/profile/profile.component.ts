@@ -38,6 +38,7 @@ export class ProfileComponent implements OnInit {
   }
    
   ngOnInit() { 
-    
+    //this.profileService.getProfileInfo();
    }
 }
+
