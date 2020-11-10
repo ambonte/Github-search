@@ -1,4 +1,4 @@
-<p>profile works!</p>
+
 <div class="container">
     
 
@@ -16,8 +16,8 @@
                         <br>
                         <p>
                                 <span class="btn btn-success btn-sm"> Repository {{profile.public_repos}}</span>
-                                <span class="btn btn-primary btn-sm"> Followers {{profile.followers}}</span>
-                                <span class="btn btn-danger btn-sm"> Following {{profile.following}}</span>
+                                <span class="btn bg-warning btn-sm"> Followers {{profile.followers}}</span>
+                                <span class="btn bg-info btn-sm"> Following {{profile.following}}</span>
                                 
                             </p>
                     </div>
@@ -30,7 +30,7 @@
                             <li class="list-group-item" *ngIf="profile.hireable"><strong>Hireable: {{profile.hireable}}</strong></li>
                             <li class="list-group-item" *ngIf="profile.created_at"><strong>Created on : {{profile.created_at|date |uppercase}}</strong></li>
                             <!-- <li class="list-group-item" *ngIf="profile.created_at"><strong> {{profile.created_at|dateCount}}days ago</strong></li> -->
-                         <a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"> View Profile on GitHub</a>
+                         <a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm"> VIEW PROFILE ON GITHUB</a>
                     </ul>
                     </div>
                     <div class="col-md-4">
@@ -57,7 +57,7 @@
                     <br>         
                 <div class="col-md-4" *ngFor="let repo of repos">
                     <p>{{repo.name}}<a href=" {{profile.html_url}}" target="_blank"
-                            class="btn btn-sm btn-warning pull-right">View on GitHub</a></p>
+                            class="btn btn-sm bg-success pull-right">View on GitHub</a></p>
                             <br>
                     <p>{{repo.description}}</p>
                 </div>

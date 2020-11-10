@@ -1,31 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
 import { HttpClient } from '@angular/common/http';
-import { ProfileService } from '../services/profile.service';
-//import {Repository} '../repository-class/repository';
+import { ProfileService } from '../profile.service';
 
 @Component({
-  selector: 'app-git',
-  templateUrl: './git.component.html',
+  selector: 'app-github-profile',
+  templateUrl: './github-profile.component.html',
   providers:[ProfileService],
-  styleUrls: ['./git.component.css']
+  styleUrls: ['./github-profile.component.css']
 })
-export class GitComponent implements OnInit {
+export class GithubProfileComponent implements OnInit {
  
  
- public username='dukundejeanne';
+ public username='ambonte';
  public  getProfileInfo:string;
  user:User;
 
+//  }
 
 
 
   constructor(public userRequest:ProfileService,public repoRequest:ProfileService) { }
 
   ngOnInit() {
-    
   
-   }
   
+  }
 
 }

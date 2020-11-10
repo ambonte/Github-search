@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../user-class/user';
+import { User } from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +13,13 @@ export class ProfileService {
   
 
   private username:string;
-  private access_token='55883cc5b72e71acf216d2c7f9b508b0bb466553';
+  private access_token='b0e8755ebc54834518b19a7c54f9a0c4226a7e05';
 
 
   constructor(private http:HttpClient) {
     console.log("service is ready");
-    this.username='dukundejeanne';
-    this.access_token='55883cc5b72e71acf216d2c7f9b508b0bb466553';
+    this.username='ambonte';
+    this.access_token='b0e8755ebc54834518b19a7c54f9a0c4226a7e05';
 
    }
    getProfileInfo(){
